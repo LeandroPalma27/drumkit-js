@@ -1,0 +1,185 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 29, 29);
+    background-image: url('https://wallpaperaccess.com/full/6378673.jpg');
+    background-repeat: repeat-y;
+    background-size: auto;
+}
+
+main {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-keys {
+    width: 100%;
+    height: auto;
+    display: grid;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto;
+}
+
+.container-keys .keys .container-key {
+    display: inline-flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 3px;
+    width: 75px;
+    height: 70px;
+    background: rgba(63, 63, 63, 0.445);
+    cursor: pointer;
+}
+
+.keys div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.keys .button {
+    height: 65%;
+    align-items: flex-end;
+    padding-bottom: 2px;
+}
+
+.keys .desc {
+    align-items: flex-start;
+    height: 35%;
+}
+
+#clap {
+    grid-column: 1;
+}
+
+#hihat {
+    grid-column: 2;
+}
+
+#kick {
+    grid-column: 3;
+}
+
+#openhat {
+    grid-column: 4;
+}
+
+#boom {
+    grid-column: 5;
+}
+
+#ride {
+    grid-column: 6;
+}
+
+#share {
+    grid-column: 7;
+}
+
+#tom {
+    grid-column: 8;
+}
+
+#tink {
+    grid-column: 9;
+}
+
+.key-button {
+    color: #fff;
+    font-size: 25px;
+    font-family: monospace;
+    font-weight: 600;
+    user-select: none;
+}
+
+.key-desc {
+    color: rgb(214, 186, 25);
+    font-size: 14px;
+    font-family: monospace;
+    user-select: none;
+}
+
+/* .keys:hover .container-key {
+    border: 2px solid orange;
+}
+
+.keys:hover div {
+    transform: scale(1.1);
+} */
+
+.keys:active .container-key {
+    border: 3px solid orange;
+    transform: scale(1.3);
+}
+
+/* .keys:active div {
+    transform: scale(1.1);
+} */
+
+@media (max-width: 770px) {
+
+    .container-keys {
+        width: 100%;
+        height: auto;
+        display: grid;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    #clap {
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+    
+    #hihat {
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+    
+    #kick {
+        grid-column: 3/3;
+        grid-row: 1;
+    }
+    
+    #openhat {
+        grid-column: 1/3;
+        grid-row: 2;
+    }
+    
+    #boom {
+        grid-column: 2/3;
+        grid-row: 2;
+    }
+    
+    #ride {
+        grid-column: 3/3;
+        grid-row: 2;
+    }
+    
+    #share {
+        grid-column: 1/3;
+        grid-row: 3;
+    }
+    
+    #tom {
+        grid-column: 2/3;
+        grid-row: 3;
+    }
+    
+    #tink {
+        grid-column: 3/3;
+        grid-row: 3;
+    }
+
+}
